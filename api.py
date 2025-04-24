@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 # Load the dehazing model
-model = tf.keras.models.load_model("dehazing/twoghaze1k.h5")
+model = tf.keras.models.load_model("twoghaze1k.h5")
 
 def process_image(image_data):
     """Process image data and return dehazed image"""
